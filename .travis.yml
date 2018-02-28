@@ -15,8 +15,7 @@ before_install:
   - pip install --user codecov
 
 after_success:
-  - mvn clean test jacoco:report coveralls:report
-  - codecov
+  - mvn clean test jacoco:report coveralls:report -DrepoToken="${COVERALLS_TOKEN}"
 
 branches:
   only:
