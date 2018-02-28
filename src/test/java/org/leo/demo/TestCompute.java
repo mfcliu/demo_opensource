@@ -9,4 +9,9 @@ public class TestCompute {
     public void testGetUser(){
         assertEquals("leo",(new Compute()).getUser());
     }
+
+    @Test
+    public void testMain(){
+        App.main(null);
+    }
 }
