@@ -27,15 +27,15 @@ env:
    - secure: "kbM6Xob6XWG4/7F1Irg7C3aWCypausek+NuDEx+n8JVDnF/IX6vm/7bl6s4VQjakzpqQ9MCeechcpkj5zf+p1KS2C9+GGQAkTG+lQN13Ie+xs94mSJig8BB/GUjSa5szF1iEd+/Pybs1lzO6DtqHeajISgiJKxDKGj/ESAbEOdVxP/XIAgKNucs2CmCZQQljtUZbzg1PAZWaBIIbItrobbJ1oThyHR52RYWd/aHfXa9ctoBggarc03LzaG4Uu0xRXz8T+YZk1vHnxzHxCnmRBhzFPV9veArwEPpHtDWPoTdmTBN34n6+BZQwQ/kg1IAdXb/6136b8Ea7mgBr/ZM7VnuGYzzOFaQWOiSqa4blJRdUPFsyczF1RTQXJhQuUPm6BlYOYEw9uyOxgvi1yu2HkOpaUDZy51zkhwoLkJUCQQAyL+pL5OomFz46q+egE5aOzBZNyIqw0lFS+QLPLHbfTAxN0+ZY8fpqTZWNTicBlA+ZbQ9IIIEKs4ZIGdN9cabTVqm1zJb0m2U5ryndSgYzg4otn21A/HY3wFNJQZioZZlahRX6dWfzvQPGaJELuB6TEx6/lcNeiKuMYhExT6CidDRtBoGo3fpnhEwm2tNMc/KOI9iFwQ1gwuk1PwZbo3z6U1YkrxCXnCufr7n//oTTcnJdj0OUA6/1nWTwbXrxFF0="
    - "MAVEN_OPTS=-Xms1024m -Xmx3072m -XX:MetaspaceSize=128m -XX:MaxMetaspaceSize=384m"
 
-addons:
-  coverity_scan:
-    project:
-      name: "mfcliu/demo_opensource"
-      description: "Build submitted via Travis CI"
-    notification_email: mfcliu@gmail.com
-    build_command_prepend: "mvn clean"
-    build_command: "mvn -DskipTests=true compile"
-    branch_pattern: master
+#addons:
+#  coverity_scan:
+#    project:
+#      name: "mfcliu/demo_opensource"
+#      description: "Build submitted via Travis CI"
+#    notification_email: mfcliu@gmail.com
+#    build_command_prepend: "mvn clean"
+#    build_command: "mvn -DskipTests=true compile"
+#    branch_pattern: master
 
 cache:
   directories:
