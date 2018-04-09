@@ -10,5 +10,6 @@ public class App
     {
         Compute compute = new Compute();
         System.out.println( "Hello " + compute.getUser() );
+        Compute aa = new Compute();
     }
 }
